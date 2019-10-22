@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import User from "./pages/User";
 
 import "./App.css";
 
@@ -13,12 +14,7 @@ function App() {
         <header className="App-header">
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route
-            path="/user/:username"
-            render={({ match }) => {
-              return <h1>Welcome {match.params.username}</h1>;
-            }}
-          />
+          <Route path="/user" component={User} />
         </header>
       </div>
     </BrowserRouter>
