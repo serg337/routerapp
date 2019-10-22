@@ -9,18 +9,18 @@ function Navigation() {
           exact
           className="App-link"
           to="/"
-          activeStyle={{ color: "red" }}
+          activeClassName="Active-link"
         >
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink className="App-link" to="about" activeStyle={{ color: "red" }}>
+        <NavLink className="App-link" to="about" activeClassName="Active-link">
           About
         </NavLink>
       </li>
       <li>
-        <NavLink className="App-link" to="user" activeStyle={{ color: "red" }}>
+        <NavLink className="App-link" to="user" activeClassName="Active-link">
           User
         </NavLink>
       </li>
